@@ -26,7 +26,9 @@
 .sticky-top.navbar-light .navbar-nav .nav-link {
   padding: 20px 0;
 }
-
+.dropdown{
+  z-index: 999;
+}
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary);

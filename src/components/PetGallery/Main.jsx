@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import './main.css'
 import { HiOutlineClipboard } from 'react-icons/hi'
-import {MdOutlinePets} from 'react-icons/md'
+// import {MdOutlinePets} from 'react-icons/md'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import UrlHelper from "../../UrlHelper"
@@ -45,7 +45,7 @@ const Main = () => {
                     {petname}
                   </h4>
                   <span className="continent flex">
-                    <MdOutlinePets className='icon' />
+                  <i className="fa-solid fa-paw"></i>
                     <span className="name">
                       {category}
                     </span>
