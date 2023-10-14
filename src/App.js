@@ -12,6 +12,7 @@ import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import BlogDetails from './components/Blog/BlogDetails';
 import Shop from './components/Shop/Shop';
+import SignUpForm from './components/SignUp/Signup';
 function App() {
   const [isSticky, setIsSticky] = useState(false);
   const [isDropdownHover, setIsDropdownHover] = useState(false);
@@ -52,6 +53,7 @@ function App() {
       <Route path='/contact' element={<Contact/>} ></Route> 
       <Route path='/blogdetails' element={<BlogDetails/>} ></Route> 
       <Route path='/shop' element={<Shop/>} ></Route> 
+      <Route path='/signup' element={<SignUpForm/>} ></Route> 
     </Routes>
     <Footer></Footer>
     </>
