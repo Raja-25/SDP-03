@@ -15,6 +15,8 @@ import Contact from './components/Contact/Contact';
 import BlogDetails from './components/Blog/BlogDetails';
 import Shop from './components/Shop/Shop';
 import SignUpForm from './components/SignUp/Signup';
+import Main from './components/PetGallery/Main';
+import Adopt from './components/AdoptForm/Adopt';
 function App() {
   const [isSticky, setIsSticky] = useState(false);
   const [isDropdownHover, setIsDropdownHover] = useState(false);
@@ -56,6 +58,8 @@ function App() {
       <Route path='/blogdetails' element={<BlogDetails/>} ></Route> 
       <Route path='/shop' element={<Shop/>} ></Route> 
       <Route path='/signup' element={<SignUpForm/>} ></Route> 
+      <Route path='/pets' element={<Main/>} ></Route> 
+      <Route path='/adopt' element={<Adopt/>} ></Route> 
     </Routes>
     <Footer></Footer>
     <ToastContainer></ToastContainer>

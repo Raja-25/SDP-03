@@ -2,6 +2,7 @@ import React from 'react'
 import blog1 from '../../img/blog-1.jpg';
 import blog2 from '../../img/blog-2.jpg';
 import "./Blog.css"
+import { Link } from 'react-router-dom';
 export default function Blog() {
   return (
     <div className='maincon1'>
@@ -21,7 +22,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -75,7 +76,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -111,7 +112,7 @@ export default function Blog() {
                             </div>
                             <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
                             <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                            <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                            <Link class="text-primary text-uppercase" to="/blogdetails">Read More<i class="bi bi-chevron-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -146,11 +147,10 @@ export default function Blog() {
             <div class="mb-5">
                 <h3 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Categories</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Design</a>
-                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
-                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
-                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Keyword Research</a>
-                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Email Marketing</a>
+                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Funny Dogs</a>
+                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Funny Cats</a>
+                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Exotic Fishes</a>
+                    <a class="h5 bg-light py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Rare Animals</a>
                 </div>
             </div>
             <div class="mb-5 blogimage" >
@@ -160,21 +160,8 @@ export default function Blog() {
                     <a href="" class="h5 d-flex align-items-center bg-light px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
                     </a>
                 </div>
-                <div class="d-flex overflow-hidden mb-3">
-                    <img class="img-fluid"  src={blog2}   alt=""/>
-                    <a href="" class="h5 d-flex align-items-center bg-light px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
-                    </a>
-                </div>
-                <div class="d-flex overflow-hidden mb-3">
-                    <img class="img-fluid"  src={blog2}   alt=""/>
-                    <a href="" class="h5 d-flex align-items-center bg-light px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
-                    </a>
-                </div>
-                <div class="d-flex overflow-hidden mb-3">
-                    <img class="img-fluid" src={blog1}   alt=""/>
-                    <a href="" class="h5 d-flex align-items-center bg-light px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
-                    </a>
-                </div>
+                
+               
                 <div class="d-flex overflow-hidden mb-3">
                     <img class="img-fluid"  src={blog2}   alt=""/>
                     <a href="" class="h5 d-flex align-items-center bg-light px-3 mb-0">Lorem ipsum dolor sit amet adipis elit

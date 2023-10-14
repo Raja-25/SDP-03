@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.bodymain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C1BFFA;
+  font-family: inter, sans-serif;
+  border-radius: 50px;
+  border-radius: 66px;
+  backdrop-filter: blur(200px);
+  /* background: transparent; */
+  
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 70%;
+  z-index: 2;
+}
+
+.bodymain .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  position: relative;
+  width: 48vw;
+  height: auto;
+
+  border-radius: 16px;
+  background-color: white;
+
+  border: 2px solid #1B1B1B;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 0px #1B1B1B;
+  border-radius: 8px;
+}
+
+.bodymain .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bodymain #exit {
+  align-self: flex-end;
+}
+
+.bodymain h1 {
+  margin-left: 170px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.bodymain label {
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.bodymain input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding: 16px 24px;
+  margin-left: 2.5%;
+  width: 90%;
+  height: 15%;
+  left: 1048px;
+  top: 16px;
+  background: #FFFFFF;
+  border: 2px solid #1B1B1B;
+  box-sizing: border-box;
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+.bodymain textarea:focus,
+input:focus {
+  outline: none;
+  background: #9df004;
+  border: 3px solid #1B1B1B;
+  border-radius: 16px;
+}
+
+.bodymain .exp-cvc {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.bodymain .expiration {
+  font-size: 0.75rem;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.bodymain .security {
+  font-size: 0.75rem;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.bodymain span {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.bodymain .btn {
+  background-color: #F9E450;
+  border: 2px solid #1B1B1B;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px 32px 16px 16px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+margin-left: 40%;
+  width: 141px;
+  height: 56px;
+  left: 16px;
+  top: 88px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: 0.16s ease-out;
+}
+
+.bodymain .btn:hover {
+  background: #FFBB38;
+  border: 4px solid #1B1B1B;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 4px #C1BFFA;
+  border-radius: 16px;
+}
+
+.bodymain #exit {
+  cursor: pointer;
+}
