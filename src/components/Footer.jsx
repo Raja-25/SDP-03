@@ -18,23 +18,23 @@ export default function Footer() {
               <div class="col-lg-3 col-md-6">
                   <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Quick Links</h5>
                   <div class="d-flex flex-column justify-content-start">
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-danger me-2" ></i>Home</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                      <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-danger me-2" ></i>Home</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                      <a class="text-body" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                   </div>
               </div>
               <div class="col-lg-3 col-md-6">
                   <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Popular Links</h5>
                   <div class="d-flex flex-column justify-content-start">
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                      <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                      <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                      <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                      <a class="text-body" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                   </div>
               </div>
               <div class="col-lg-3 col-md-6">
@@ -54,17 +54,17 @@ export default function Footer() {
                   </div>
               </div>
               <div class="col-12 text-center text-body">
-                  <a class="text-body" href="">Terms & Conditions</a>
+                  <a class="text-body" href="/">Terms & Conditions</a>
                   <span class="mx-1">|</span>
-                  <a class="text-body" href="">Privacy Policy</a>
+                  <a class="text-body" href="/">Privacy Policy</a>
                   <span class="mx-1">|</span>
-                  <a class="text-body" href="">Customer Support</a>
+                  <a class="text-body" href="/">Customer Support</a>
                   <span class="mx-1">|</span>
-                  <a class="text-body" href="">Payments</a>
+                  <a class="text-body" href="/">Payments</a>
                   <span class="mx-1">|</span>
-                  <a class="text-body" href="">Help</a>
+                  <a class="text-body" href="/">Help</a>
                   <span class="mx-1">|</span>
-                  <a class="text-body" href="">FAQs</a>
+                  <a class="text-body" href="/">FAQs</a>
               </div>
           </div>
       </div>

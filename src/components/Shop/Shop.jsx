@@ -348,9 +348,9 @@ export default function Shop() {
                                 <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
                                 <div class="team-overlay">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-twitter"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-facebook"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -364,9 +364,9 @@ export default function Shop() {
                                 <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
                                 <div class="team-overlay">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-twitter"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-facebook"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -380,9 +380,9 @@ export default function Shop() {
                                 <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
                                 <div class="team-overlay">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-twitter"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-facebook"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -396,9 +396,9 @@ export default function Shop() {
                                 <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
                                 <div class="team-overlay">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-twitter"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-facebook"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -412,9 +412,9 @@ export default function Shop() {
                                 <img class="img-fluid w-100" src="img/team-5.jpg" alt="" />
                                 <div class="team-overlay">
                                     <div class="d-flex align-items-center justify-content-start">
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-twitter"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-facebook"></i></a>
+                                        <a class="btn btn-light btn-square mx-1" href="/"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>

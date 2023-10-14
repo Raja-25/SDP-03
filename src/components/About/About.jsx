@@ -8,6 +8,8 @@ import team2 from "../../img/team-2.jpg";
 import team3 from "../../img/team-3.jpg";
 import team4 from "../../img/team-4.jpg";
 import team5 from "../../img/team-5.jpg";
+
+
 export default function () {
     useEffect(() => {
         new Splide('.splide', {
