@@ -3,6 +3,8 @@ import React,{useEffect,useState} from 'react'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Routes,Route} from 'react-router-dom';
 import About from './components/About/About';
 import Home from './components/Home';
@@ -56,6 +58,7 @@ function App() {
       <Route path='/signup' element={<SignUpForm/>} ></Route> 
     </Routes>
     <Footer></Footer>
+    <ToastContainer></ToastContainer>
     </>
   );
 }

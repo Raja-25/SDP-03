@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import UrlHelper from "../../UrlHelper"
-import axios from 'axios';
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 const SignUpForm = () => {
+    
+    const nav = useNavigate();
     const [formData, setFormData] = useState({
         username: '',
         email: '',
@@ -27,7 +30,14 @@ const SignUpForm = () => {
                 },
             })
             .then((response) => {
-                console.log('Sign up successful!', response.data);
+                if (response.status === 204) {
+                    console.log("not working");
+                    toast.error("signup failed ")
+                } else {
+                    console.log('login up successful!', response.data);
+                    toast.success("signup successful");
+                    nav("/login");
+                }
                 // You can perform any additional actions here
             })
             .catch((error) => {

@@ -2,8 +2,13 @@ import React, { useState } from 'react'
 import "./Login.css"
 import pic from "../../img/login.png"
 
+import { toast } from "react-toastify";
+
+import { useNavigate } from "react-router-dom";
+import UrlHelper from "../../UrlHelper"
 import _ from 'lodash';
 export default function Login() {
+    const nav = useNavigate();
     const [passwordType, setPasswordType] = useState('password');
     const [rotateHead, setRotateHead] = useState(0);
     const [hideHands, setHideHands] = useState(false);
@@ -23,7 +28,36 @@ export default function Login() {
         setHideHands(false);
         setRemoveBreath(false);
     };
+    const handlesubmit = (e) => {
+        e.preventDefault();
+        const data = new FormData(e.currentTarget);
+        const formData = {
+            username: data.get("username"),
+            password: data.get("password")
+        }
+        UrlHelper
+            .post('/login', formData, {
+                headers: {
+                    "Access-Control-Allow-Origin": "*",
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then((response) => {
+                if (response.status === 204) {
+                    console.log("not working");
+                    toast.error("login failed ")
+                } else {
+                    console.log('login up successful!', response.data);
+                    toast.success("login successful");
+                    nav("/");
+                }
+            })
+            .catch((error) => {
+                console.error('Error signing up:', error);
+                // Handle the error appropriately
+            });
 
+    }
     const handleUsernameFocus = (event) => {
         let length = Math.min(event.target.value.length - 16, 19);
         setRotateHead(-length);
@@ -118,14 +152,14 @@ export default function Login() {
                                 </div>
                             </div>
                         </div>
-                        <form class="login">
+                        <form class="login" onSubmit={handlesubmit}>
                             <label>
                                 <div class="fa fa-phone"></div>
-                                <input className="username" onFocus={handleUsernameFocus} onBlur={handleUsernameBlur} onInput={handleUsernameInput} placeholder="username" />
+                                <input className="username" onFocus={handleUsernameFocus} onBlur={handleUsernameBlur} onInput={handleUsernameInput} placeholder="username" name="username" />
                             </label>
                             <label>
                                 <div class="fa fa-commenting"></div>
-                                <input className="password" type={passwordType} onFocus={handlePasswordFocus} onBlur={handlePasswordBlur} placeholder="password" />
+                                <input className="password" name="password" type={passwordType} onFocus={handlePasswordFocus} onBlur={handlePasswordBlur} placeholder="password" />
                                 <button className="password-button" onClick={handleShowPasswordClick}><i class='bx bx-show'></i></button>
                             </label>
                             <button class="login-button">Login</button>
