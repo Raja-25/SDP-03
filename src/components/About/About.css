@@ -1,0 +1,38 @@
+.containermainteam {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .team-carousel {
+    margin-top: 20px;
+  }  
+  
+  .team-item {
+    width: 50%;
+  }
+  
+  .team-item img {
+    width: 50%;
+    max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  
+  .team-overlay {
+    display: none; /* Adjust the display property as needed */
+  }
+  
+  .bg-light.text-center {
+    padding: 2rem;
+  }
+  
+  .text-uppercase {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+  }
+  
+  .m-0 {
+    margin: 0;
+  }
+  
+  .splide__slide {
+    margin-right: 10px;
+  }
+  

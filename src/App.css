@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  
+  
+
 }
 
 .App-logo {
@@ -36,3 +39,19 @@
     transform: rotate(360deg);
   }
 }
+
+.container-fluid {
+  background: linear-gradient(to bottom, #ffcc00, rgba(153, 255, 0, 0.546));
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+a{
+  text-decoration: none;
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom, #ffcc00, rgba(238, 255, 0, 0.587));
+
+}
+

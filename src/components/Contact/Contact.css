@@ -1,0 +1,10 @@
+.conmain input{
+    height: 55px;
+}
+.boder{
+    max-width: 600px;
+}
+.map{
+  height: 205px; 
+  border:0;
+}
