@@ -13,7 +13,7 @@ export default function Login() {
     const [hideHands, setHideHands] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
     const [removeBreath, setRemoveBreath] = useState(false);
-    const auth = useAuth()
+    const auth = useAuth();
     const handlePasswordFocus = () => {
         if (showPassword) {
             setHideHands(false);
@@ -46,21 +46,10 @@ export default function Login() {
                     console.log("not working");
                     toast.error("login failed ")
                 } else {
-                    //console.log('login up successful!', response.data);
+                    console.log('login up successful!', response.data);
                     toast.success("login successful");
-                    const {
-                        username,
-                        contact,
-                        email,
-                    } = response.data;
-                    const userData = {
-                        username,
-                        contact,
-                        email,
-
-                    };
-                    auth.login(userData)
-                    console.log(userData)
+                    
+                    auth.login(response.data);
                     nav("/");
                 }
             })

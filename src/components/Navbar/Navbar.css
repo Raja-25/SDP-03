@@ -9,6 +9,10 @@
 .navbarmain{
   z-index: 999;
 }
+.navbarmain button{
+  border: none;
+  background: transparent;
+}
 
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Roboto', sans-serif;

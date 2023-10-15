@@ -1,7 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css"
+
+import { useAuth } from "../../AuthContext";
 export default function Navbar() {
+  const auth=useAuth();
+  const handleLogout = () => {
+    if (window.confirm("💜 Are you sure, you want to logout! 😓")) {
+      auth.logout();
+    }
+  };
   return (
 
     <>
@@ -29,12 +37,25 @@ export default function Navbar() {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <div className="nav-item dropdown">
-              <NavLink to="/" className="nav-NavLink dropdown-toggle fs-5 text-dark" data-bs-toggle="dropdown">Account</NavLink>
-              <div className="dropdown-menu m-0">
-                <NavLink to="/login" className="dropdown-item">Sign in</NavLink>
-                <NavLink to="/signup" className="dropdown-item">Sign up</NavLink>
-              </div>
-            </div>
+  {auth.user ? (
+    <>
+      <button className="nav-NavLink dropdown-toggle fs-5 text-dark" data-bs-toggle="dropdown">
+        <i className="fa-solid fa-user fa-bounce"></i> {auth.user.username}
+      </button>
+      <div className="dropdown-menu m-0">
+        <button className="dropdown-item" onClick={handleLogout}>Logout</button>
+      </div>
+    </>
+  ) : (
+    <div>
+      <NavLink to="/" className="nav-NavLink dropdown-toggle fs-5 text-dark" data-bs-toggle="dropdown">Account</NavLink>
+      <div className="dropdown-menu m-0">
+        <NavLink to="/login" className="dropdown-item">Sign in</NavLink>
+        <NavLink to="/signup" className="dropdown-item">Sign up</NavLink>
+      </div>
+    </div>
+  )}
+</div>
             &nbsp;&nbsp;&nbsp;
             <NavLink to="/contact" className="nav-item nav-NavLink nav-contact bg-success text-white px-5 ms-lg-5">Contact <i className="bi bi-arrow-right"></i></NavLink>
           </div>
