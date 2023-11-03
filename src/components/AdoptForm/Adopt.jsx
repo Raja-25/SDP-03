@@ -2,7 +2,9 @@ import React from 'react'
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import UrlHelper from "../../UrlHelper"
+import { useAuth } from "../../AuthContext";
 import './adopt.css'
+import { TypeAnimation } from 'react-type-animation';
 export default function Adopt() {
 
     const nav = useNavigate();
@@ -38,45 +40,67 @@ export default function Adopt() {
                 // Handle the error appropriately
             });
     };
+
+    const auth = useAuth();
     return (
-        <div className='bodymain'>
-            <div className="main">
+       <>
+        {auth.user ? (
+                <div className='bodymain'>
+                    <div className="main">
 
-                <div className="container">
+                        <div className="container">
 
-                    <h1><i className="fa-solid fa-paw"></i>&nbsp;Donate a Pet&nbsp;<i className="fa-solid fa-paw"></i></h1>
+                            <h1><i className="fa-solid fa-paw"></i>&nbsp;Donate a Pet&nbsp;<i className="fa-solid fa-paw"></i></h1>
 
+                        </div>
+                        <form onSubmit={handlesubmit}>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="petname" placeholder="Name" />
+                            <br />
+                            <label for="card">Type of Animal</label>
+                            <input type="text" name='category' placeholder='ex:dog,cat,bird' />
+                            <br />
+                            <div className="exp-cvc">
+                                <div className="expiration">
+                                    <label for="expiry">Breed</label>
+                                    <input className="inputCard" name="breed" id="expiry" type="text" required placeholder="00/00" />
+                                    <br />
+                                </div>
+                                <div className="security">
+                                    <label for="cvc">Age</label>
+                                    <input type="number" id="cvc" name="age" />
+                                    <br />
+                                </div>
+                            </div>
+                            <label for="card">ImageUrl</label>
+                            <input type="text" name='imageUrl' placeholder='ex:dog,cat,bird' />
+                            <br />
+                            <label for="card">Description</label>
+                            <input type="text" name='description' placeholder='ex:dog,cat,bird' />
+                            <br />
+                            <div className="btn">
+                                <span id="submit"><button type='submit'>Submit</button></span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <form onSubmit={handlesubmit}>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="petname" placeholder="Name" />
-                    <br />
-                    <label for="card">Type of Animal</label>
-                    <input type="text" name='category' placeholder='ex:dog,cat,bird' />
-                    <br />
-                    <div className="exp-cvc">
-                        <div className="expiration">
-                            <label for="expiry">Breed</label>
-                            <input className="inputCard" name="breed" id="expiry" type="text" required placeholder="00/00" />
-                            <br />
-                        </div>
-                        <div className="security">
-                            <label for="cvc">Age</label>
-                            <input type="number" id="cvc" name="age" />
-                            <br />
-                        </div>
-                    </div>
-                    <label for="card">ImageUrl</label>
-                    <input type="text" name='imageUrl' placeholder='ex:dog,cat,bird' />
-                    <br />
-                    <label for="card">Description</label>
-                    <input type="text" name='description' placeholder='ex:dog,cat,bird' />
-                    <br />
-                    <div className="btn">
-                        <span id="submit"><button type='submit'>Submit</button></span>
-                    </div>
-                </form>
-            </div>
-        </div>
+            ) : (
+                <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  'Please Login to Acces Our Form',
+                  2000, // wait 1s before replacing "Mice" with "Hamsters"
+                  'Please Login to Adopt Beatiful Pets',
+                  2000,
+                ]}
+                preRenderFirstString={false}
+                 wrapper="span"
+                speed={50}
+                style={{ fontSize: '2em', display: 'inline-block' }}
+                repeat={Infinity}
+              />
+            )
+        }
+        </>
     )
 }
