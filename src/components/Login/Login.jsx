@@ -48,7 +48,7 @@ export default function Login() {
                 } else {
                     console.log('login up successful!', response.data);
                     toast.success("login successful");
-                    
+
                     auth.login(response.data);
                     nav("/");
                 }

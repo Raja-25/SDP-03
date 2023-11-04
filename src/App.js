@@ -2,6 +2,7 @@
 import React,{useEffect,useState} from 'react'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Cart from './components/Cart/Cart';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -60,6 +61,7 @@ function App() {
       <Route path='/signup' element={<SignUpForm/>} ></Route> 
       <Route path='/pets' element={<Main/>} ></Route> 
       <Route path='/adopt' element={<Adopt/>} ></Route> 
+      <Route path="cart" element={<Cart />} />
     </Routes>
     <Footer></Footer>
     <ToastContainer></ToastContainer>

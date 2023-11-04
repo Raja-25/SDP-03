@@ -1,0 +1,73 @@
+.cartPic {
+  margin: auto;
+  width: 100px !important;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.cartbtn {
+  background: transparent;
+  border: none;
+}
+.Cart h4 {
+  text-transform: capitalize;
+}
+.Cart h1{
+  text-align: center;
+}
+.modal-body {
+  background-color: transparent;
+}
+.modal-content {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  backdrop-filter: blur(12px);
+  color: white;
+}
+.card {
+  /* background-color: rgba(174, 47, 193, 0.233); */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  backdrop-filter: blur(4px);
+  margin-bottom: 2%;
+  border: 1px solid white;
+}
+.card:after {
+  content: "PetNirvana";
+  z-index: -999;
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 3.9em;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(180, 111, 207, 0.186);
+  rotate: 315deg;
+}
+.card a {
+  margin: auto;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.main-body-light .modal-content {
+  background-image: linear-gradient(-45deg, #9795f0 100%, #df89b5 0%);
+  color: black;
+}
+.main-body-light .card{
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  border: 1px solid rgb(0, 0, 0);
+}
+.btn-close {
+  background-color: aliceblue;
+}
+.card img {
+  margin: auto;
+}
