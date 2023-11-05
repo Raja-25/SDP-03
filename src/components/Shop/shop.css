@@ -1,3 +1,62 @@
+.input-container {
+  width: 220px;
+  position: relative;
+}
+
+
+.clear-button {
+  position: relative;
+  background-color: #f8f9fa;
+  border: none;
+  color: #495057;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transform: rotateY('90deg');
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #e9ecef;
+}
+
+
+.input {
+  width: 450%;
+  height: 40px;
+  padding: 20px;
+  margin-left: 150%;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+
+.input-container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
 .ProductsPage {
     overflow-x: hidden;
     margin-top: 1%;
@@ -122,6 +181,7 @@
   }
   .product-container {
     position: relative;
+    margin-top: 5%;
   }
   .product-container .product-card {
     animation: abtfloaterx 1s;

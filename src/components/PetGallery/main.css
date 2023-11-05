@@ -14,6 +14,60 @@
   --cardHover:rgb(255,255,255);
 }
 
+.maindiv1{
+  position: relative;
+  display: flex;
+justify-content: center;
+}
+
+.filter-section {
+  --width-of-input: 200px;
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.959);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  width: var(--width-of-input);
+ }
+ /* styling of Input */
+ .filter-section input {
+  color: #e01111;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border-bottom: 2px groove black;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+ }
+ /* styling of animated border */
+ .input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+ }
+ /* Hover on Input */
+ .filter-section input:hover {
+  background: var(--input-hovered-color);
+ }
+ 
+ .filter-section input:focus {
+  outline: none;
+ }
+ /* here is code of animated border */
+ .filter-section input:focus ~ .input-border {
+  width: 100%;
+ }
+
+
+
+
+
 .main {
   width: 100%;
 }
@@ -37,6 +91,7 @@
 }
 .main .secContent {
   justify-content: center;
+  margin-top: 1%;
   gap: 1.5rem;
 }
 .main .secContent .singleDestination {

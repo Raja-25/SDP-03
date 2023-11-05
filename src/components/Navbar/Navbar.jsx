@@ -73,6 +73,8 @@ export default function Navbar() {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <NavLink to="/about" className="nav-item nav-NavLink fs-5 text-dark">About</NavLink>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <NavLink to="/shop" className="nav-item nav-NavLink fs-5 text-dark">Shop</NavLink>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="navcart" >
                 <button type="button" className="cartbtn" data-bs-toggle="modal" data-bs-target="#cartModal">
                   <img className="carticon-ani" src={cartlogo} alt="" width={47}></img>

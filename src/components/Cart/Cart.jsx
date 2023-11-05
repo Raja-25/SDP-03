@@ -4,6 +4,7 @@ import { useAuth } from "../../AuthContext";
 import { toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
+
 import UrlHelper from "../../UrlHelper"
 export default function Cart(props) {
   const auth = useAuth();
@@ -26,37 +27,7 @@ export default function Cart(props) {
       console.error("Invalid ID received");
     }
   }
-    const checkoutHandler = async (amount) => {
-     
-     /* setLoad(null);
-      const { data: { key } } = await axios.get(`${AutobotBackend}/payment/getkey`)
-      const { data: { order } } = await axios.post(`${AutobotBackend}/payment/checkout`, {
-        amount
-      })
-      const options = {
-        key,
-        amount: order.amount,
-        currency: "INR",
-        name: "Autobots Pvt Ltd",
-        description: "Payment for your parts",
-        image: "https://th.bing.com/th/id/OIP.i1ZELPy8F52bVZTE9lJGHgHaHa?pid=ImgDet&rs=1",
-        order_id: order.id,
-        callback_url: `${AutobotBackend}/payment/paymentverification`,
-        prefill: {
-          name: auth.user,
-        },
-        notes: {
-          "address": "Razorpay Corporate Office"
-        },
-        theme: {
-          "color": "#cf6cc9"
-        }
-      };
-      setLoad(true)
-      const razor = new window.Razorpay(options);
-      razor.open();
-        */
-    }
+
 
   return (
     <div className='Cart'>
@@ -109,9 +80,14 @@ export default function Cart(props) {
             <div className="modal-footer">
               <h5 className="card-title">Sub Total: {props.total}&nbsp;</h5>
               <button type="button" className="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-             
-                <button type="button" className="btn btn-outline-warning" onClick={() => checkoutHandler(props.total)}>Checkout</button>
 
+              {/* <button type="button" className="btn btn-outline-warning" >Checkout</button> */}
+              <div id="razorpay-button-container">
+          <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MwcH6pSerSt5zs" async></script>
+          </form>
+        </div>
+              
             </div>
           </div>
         </div>
