@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import './Styles/Cart.css'
 import { useAuth } from "../../AuthContext";
 import { toast } from "react-toastify";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 import UrlHelper from "../../UrlHelper"
 export default function Cart(props) {
   const auth = useAuth();
+  const nav = useNavigate();
   const cartList = props.cartList;
   function deleteProduct(id) {
     if (id) {
@@ -80,14 +81,9 @@ export default function Cart(props) {
             <div className="modal-footer">
               <h5 className="card-title">Sub Total: {props.total}&nbsp;</h5>
               <button type="button" className="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-
-              {/* <button type="button" className="btn btn-outline-warning" >Checkout</button> */}
-              <div id="razorpay-button-container">
-          <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MwcH6pSerSt5zs" async></script>
-          </form>
-        </div>
-              
+              {auth.user &&
+                <button type="button" className="btn btn-outline-warning" onClick={() => window.open('https://rzp.io/l/KxSDbVboO2', '_blank')} >Checkout</button>   
+              }
             </div>
           </div>
         </div>

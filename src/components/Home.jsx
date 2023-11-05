@@ -56,20 +56,20 @@ export default function
 
 
   <section class="container services-for-every-dog mt-4 ">
-    <div class="row">
+    <div class="homeclass row">
       <div class="col-xs-12 mb-4">
         <center>
           <h2 class="adopt-pet-heading">Your Pet Adoption Journey With The Pet Nirvana</h2>
         </center>
       </div>
     </div>
-    <div class="row">
+    <div class="homeclass row">
       <div class="col-xs-12 col-sm-6 sitters-column">
         <img data-src="//dm6g3jbka53hp.cloudfront.net/static-images/adopt-me-pet-02032021.jpg"
           class="smart_image adopt-me-img" src="//dm6g3jbka53hp.cloudfront.net/static-images/adopt-me-pet-02032021.jpg"
           height="650px"/>
       </div>
-      <div class="col-xs-12 col-sm-6 ">
+      <div class="col-xs-2 col-sm-6 ">
         <div class="service-row mt-5">
           <div class="svg-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512.00045 512">
