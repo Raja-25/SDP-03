@@ -49,7 +49,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-
+<section className='content'>
     <Routes>
       <Route path='/' element={<Home/>} ></Route> 
       <Route path='/about' element={<About/>} ></Route> 
@@ -63,8 +63,10 @@ function App() {
       <Route path='/adopt' element={<Adopt/>} ></Route> 
       <Route path="cart" element={<Cart />} />
     </Routes>
+    </section>
     <Footer></Footer>
     <ToastContainer></ToastContainer>
+
     </>
   );
 }
